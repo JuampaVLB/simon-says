@@ -25,18 +25,14 @@ Siga estos pasos para instalar y ejecutar el proyecto utilizando Docker:
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/TuUsuario/TuRepositorio.git
+   git clone https://github.com/JuampaVLB/simon-says.git
 
-   
 2. Navega a la carpeta del proyecto
      ```bash
-   cd carpeta
-
+   cd simon-says
 3. Construye y levanta los contenedores de Docker utilizando Docker Compose:
       ```bash
    docker-compose up -d --build
-
-
 4. Accede al juego a través de tu navegador web:
       ```bash
    http://localhost/
