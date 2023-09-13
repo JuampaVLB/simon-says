@@ -13,7 +13,17 @@
         <img src="./assets/img/logo.png" class="logo" alt="Logo Simon Says">
         <img src="./assets/img/simon.png" class="simon" alt="simon">
         </div>
-        <a href="game.php" class="start-button">Start Game</a>
+        <a href="./views/game.php" class="start-button">Start Game</a>
+        <div class="socials">
+            <a href="https://github.com/JuampaVLB" target="BLANK">
+            <img src="./assets/img/github.png" alt="github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/juanpablovillalba/" target="BLANK">
+            <img src="./assets/img/linkedin.png" alt="linkedin logo">
+            </a>
+        
+        
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,34 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"
+      # MYSQL_DATABASE: simon_says
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - my-network
+    ports:
+      - "3307:3306"
+    command: --default-authentication-plugin=mysql_native_password
+
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./controllers:/var/www/html/controllers
+    depends_on:
+      - mysql
+    networks:
+      - my-network
+
+volumes:
+  mysql-data:
+
+networks:
+  my-network:

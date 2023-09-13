@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS simon_says;
+USE simon_says;
+CREATE TABLE IF NOT EXISTS scoreboard (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nickname VARCHAR(255),
+round INT(11)
+);
